@@ -1,7 +1,15 @@
-import type { NextConfig } from "next";
+import { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Allows images from Contentful’s domain (images.ctfassets.net) instead of blocking them for security reasons
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.ctfassets.net', // Contentful's image domain here
+      },
+    ],
+  },
 };
 
 export default nextConfig;

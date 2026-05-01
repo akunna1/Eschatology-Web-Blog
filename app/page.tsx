@@ -1,5 +1,3 @@
-"use client";
-
 import Homepic from "./components/homepic";
 import Verse from "./components/verse";
 import Button from "./components/button";
