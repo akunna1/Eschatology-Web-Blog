@@ -1,26 +1,26 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.0rem;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+/*Main heading*/
+h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  font-family: 'Times New Roman', serif;
+}
+
+/*Subtitles*/
+h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/*Navbar menu*/
+h3 {
+  font-size: 1.0rem;
+  font-weight: 500;
 }
