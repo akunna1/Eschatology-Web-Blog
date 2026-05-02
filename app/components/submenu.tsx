@@ -1,6 +1,6 @@
 "use client";
 
-export default function submenu() {
+export default function Submenu() {
   return (
     <div>
       Submenu

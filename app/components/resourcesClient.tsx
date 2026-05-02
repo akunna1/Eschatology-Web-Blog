@@ -57,6 +57,7 @@ export default function ResourcesClient({
                     src={resource.imageUrl}
                     alt={resource.title}
                     fill // works with relative parent to make image cover area
+                    sizes="100vw" // tells browser to use full width for image
                     className="object-cover"
                   />
                 </div>
