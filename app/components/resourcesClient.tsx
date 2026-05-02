@@ -157,7 +157,7 @@ export default function ResourcesClient({
 
           <Link href="/digest">
             <button className="bg-black py-1 px-6 rounded-lg transition-all duration-300 shadow-md">
-              <h3 className="text-white hover:text-gray-400">
+              <h3 className="text-white hover:text-gray-400 active:text-gray-400">
                 Subscribe
               </h3>
             </button>
