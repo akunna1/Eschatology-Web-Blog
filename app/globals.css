@@ -19,7 +19,7 @@ h2 {
   font-weight: 500;
 }
 
-/*Menu text, Subscribe button on the citadel in homepage*/
+/*Menu text, Subscribe button on the citadel in homepage, Return Home button*/
 h3 {
   font-size: 1.0rem;
   font-weight: 500;
@@ -28,3 +28,15 @@ h3 {
 .times-new-roman {
   font-family: "Times New Roman", serif;
 }
+
+/* Newspaper-style subtle background */
+.backgroundImage {
+  background-image: repeating-linear-gradient(
+    0deg,
+    #000 0px,
+    #000 1px,
+    transparent 1px,
+    transparent 6px
+  );
+}
+            
