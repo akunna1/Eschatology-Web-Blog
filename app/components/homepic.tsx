@@ -28,9 +28,9 @@ export default function Homepic() {
       {visible && (
         <div className="absolute inset-0 flex items-center justify-center sm:flex lg:hidden">
           <Link href="/">
-            <h3 className="uppercase text-md md:text-lg p-20 md:p-40 font-bold italic text-white text-center">
+            <p className="uppercase text-md md:text-lg p-20 md:p-40 font-bold italic text-white text-center">
               Unveiling Christianity’s Utmost Counterfeit Behind Its End-Times Apostasy
-            </h3>
+            </p>
           </Link>
         </div>
       )}
