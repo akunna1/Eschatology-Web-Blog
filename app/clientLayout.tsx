@@ -15,7 +15,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
       <Menu className="hidden lg:block"  />
       <Submenu/>
 
-      <main className="grow antialiased flex flex-col min-h-screen">
+      <main className="grow flex flex-col">
         {children}
       </main>
 

@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={roboto.className}>
-      <body className="antialiased" suppressHydrationWarning={true} min-h-screen>
+      <body className="antialiased min-h-screen" suppressHydrationWarning={true}>
         <div>
           <ClientLayout>
             {children}

@@ -19,14 +19,14 @@ export default function ResourcesClient({
 }: {
   resources: Resource[];
 }) {
-  // Showing first 12 items initially (same as your original logic)
+  // Showing first 12 items initially
   const [visibleResources, setVisibleResources] = useState<Resource[]>(
     resources.slice(0, 12)
   );
 
   const [isAllVisible, setIsAllVisible] = useState(false);
 
-  // Toggle between 12 items and all items
+  // Toggling between 12 items and all items
   const toggleVisibility = () => {
     if (isAllVisible) {
       setVisibleResources(resources.slice(0, 12));
@@ -92,13 +92,13 @@ export default function ResourcesClient({
             ))}
           </div>
 
-          {/* Toggle Button (same behavior as original) */}
+          {/* Toggle Button */}
           {resources.length > 12 && (
             <button
               onClick={toggleVisibility}
               className="mt-6 text-black font-medium text-lg flex items-center"
             >
-              {isAllVisible ? "Hide Some" : "See all"}
+              {isAllVisible ? "Hide some" : "See all"}
                             {isAllVisible ? (
                 // Up arrow
                 <svg
@@ -136,7 +136,7 @@ export default function ResourcesClient({
           )}
         </div>
 
-        {/* Sidebar */}
+        {/* Sidebar for the Citadel Newsletter */}
         <div className="hidden xl:block xl:w-1/4 bg-gray-100 p-8 shadow-md text-center h-fit xl:sticky xl:top-10">
           <Image
             src="/photos/castlex.svg"

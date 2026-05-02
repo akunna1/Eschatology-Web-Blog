@@ -1,11 +1,11 @@
-import React from 'react'
+"use client";
 
-const menu = () => {
+type MenuProps = React.HTMLAttributes<HTMLDivElement>; // Extending HTML attributes for flexibility
+
+export default function Menu({ className, ...props }: MenuProps) {
   return (
-    <div>
+    <div className={className} {...props}>
       Menu
     </div>
-  )
+  );
 }
-
-export default menu

@@ -1,6 +1,6 @@
-import React from 'react'
+"use client";
 
-const footer2 = () => {
+export default function footer2() {
   return (
     <div>
       Footer 2
@@ -8,4 +8,4 @@ const footer2 = () => {
   )
 }
 
-export default footer2
+

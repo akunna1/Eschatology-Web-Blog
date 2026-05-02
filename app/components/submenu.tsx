@@ -1,6 +1,6 @@
-import React from 'react'
+"use client";
 
-const submenu = () => {
+export default function submenu() {
   return (
     <div>
       Submenu
@@ -8,4 +8,4 @@ const submenu = () => {
   )
 }
 
-export default submenu
+
