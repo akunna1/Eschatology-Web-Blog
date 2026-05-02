@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-// Same structure as server data
+// Defining a TypeScript interface for the resource data structure
 interface Resource {
   id: string;
   title: string;
@@ -99,6 +99,39 @@ export default function ResourcesClient({
               className="mt-6 text-black font-medium text-lg flex items-center"
             >
               {isAllVisible ? "Hide Some" : "See all"}
+                            {isAllVisible ? (
+                // Up arrow
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  className="ml-2 w-4 h-4 mt-1"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 15l7-7 7 7"
+                  />
+                </svg>
+              ) : (
+                // Down arrow
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  className="ml-2 w-4 h-4 mt-1"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              )}
             </button>
           )}
         </div>
@@ -113,7 +146,7 @@ export default function ResourcesClient({
             className="mx-auto mb-4"
           />
 
-          <p className="text-2xl font-extrabold text-gray-800 mb-4 uppercase times-new-roman">
+          <p className="times-new-roman text-2xl font-extrabold text-gray-800 mb-4 uppercase" >
             The Citadel
           </p>
 

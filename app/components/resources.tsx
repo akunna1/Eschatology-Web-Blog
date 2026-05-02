@@ -24,7 +24,7 @@ export default async function Resources() {
         : "",
       imageUrl: imageAsset
         ? `https:${imageAsset.fields.file.url}`
-        : "photos/apo.jpg",
+        : "/photos/apo.jpg", // fallback image
     };
   });
 
