@@ -1,16 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Roboto } from "next/font/google";
 import ClientLayout from "./clientLayout";
 
-// Global setup + Fonts + Metadata + HTML/body structure => Layout.tsx 
-
-// Roboto font with the weights
-const roboto = Roboto({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  display: "swap",
-});
+// Global setup + Metadata + HTML/body structure => Layout.tsx 
+// Font was moved to globals.css
 
 export const metadata: Metadata = {
   title: "The Counterfeit",
@@ -23,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={roboto.className}>
+    <html lang="en">
       <body className="antialiased min-h-screen" suppressHydrationWarning={true}>
         <div>
           <ClientLayout>

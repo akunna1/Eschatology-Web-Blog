@@ -124,7 +124,7 @@ export default function Submenu() {
 
         {/* Search Overlay */}
         {searchOpen && (
-          <div className="fixed -inset-10 bg-black bg-opacity-20 backdrop-blur-sm flex justify-center items-center z-50" onClick={toggleSearch}>
+          <div className="fixed -inset-10 bg-black/15 backdrop-blur-sm flex justify-center items-center z-50" onClick={toggleSearch}>
             <div className="bg-white py-3 px-6 rounded-lg shadow-lg w-80 max-w-lg" onClick={(e) => e.stopPropagation()}>
               {/* Search Form */}
               <form onSubmit={handleSearch} className="flex items-center">
@@ -223,7 +223,7 @@ export default function Submenu() {
 
         {/* Search Overlay */}
         {searchOpen && (
-          <div className="fixed -inset-10 bg-black bg-opacity-20 backdrop-blur-sm flex justify-center items-center z-50" onClick={toggleSearch}>
+          <div className="fixed -inset-10 bg-black/15 backdrop-blur-sm flex justify-center items-center z-50" onClick={toggleSearch}>
             <div className="bg-white py-3 px-6 rounded-lg shadow-lg w-96 max-w-xl" onClick={(e) => e.stopPropagation()}>
               {/* Search Form */}
               <form onSubmit={handleSearch} className="flex items-center">
@@ -281,7 +281,7 @@ export default function Submenu() {
 
         {/* Search Overlay */}
         {searchOpen && (
-          <div className="fixed -inset-10 bg-black bg-opacity-20 backdrop-blur-sm flex justify-center items-center z-50" onClick={toggleSearch}>
+          <div className="fixed -inset-10 bg-black/15 backdrop-blur-sm flex justify-center items-center z-50" onClick={toggleSearch}>
             <div className="bg-white py-3 px-6 rounded-lg shadow-lg w-96 max-w-xl" onClick={(e) => e.stopPropagation()}>
               {/* Search Form */}
               <form onSubmit={handleSearch} className="flex items-center">
@@ -357,7 +357,7 @@ export default function Submenu() {
 
         {/* Search Overlay */}
         {searchOpen && (
-          <div className="fixed -inset-10 bg-black bg-opacity-20 backdrop-blur-sm flex justify-center items-center z-50" onClick={toggleSearch}>
+          <div className="fixed -inset-10 bg-black/15 backdrop-blur-sm flex justify-center items-center z-50" onClick={toggleSearch}>
             <div className="bg-white py-3 px-6 rounded-lg shadow-lg w-120 max-w-2xl" onClick={(e) => e.stopPropagation()}>
               {/* Search Form */}
               <form onSubmit={handleSearch} className="flex items-center">
