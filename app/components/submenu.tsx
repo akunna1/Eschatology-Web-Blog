@@ -21,6 +21,9 @@ export default function Submenu() {
   const [searchQuery, setSearchQuery] = useState(''); // Stores user input
   const [searchResults, setSearchResults] = useState<any[]>([]); // Stores live suggestions
 
+  // Getting the router instance
+  const router = useRouter();
+
   // Toggles the search bar overlay on and off
   const toggleSearch = () => {
     setSearchOpen(!searchOpen);
@@ -32,7 +35,7 @@ export default function Submenu() {
     setSearchQuery(query);
 
     if (!query.trim()) {
-      setSearchResults([]); // Clear results if input is empty
+      setSearchResults([]); // Clearing results if input is empty
       return;
     }
 
@@ -59,9 +62,6 @@ export default function Submenu() {
     setIsClient(true);
   }, []);
 
-  // Getting the router instance
-  const router = useRouter();
-
   // Setting up listener for authentication state changes
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((currentUser) => {
@@ -84,7 +84,7 @@ export default function Submenu() {
   const handleSignIn = async () => {
     try {
       await signInWithPopup(auth, provider);
-      router?.push('/entries'); // Redirect to /entries after successful login
+      router?.push('/entries'); // Redirecting to /entries after successful login
     } catch (error) {
       console.error('Error during sign-in:', error);
     }
