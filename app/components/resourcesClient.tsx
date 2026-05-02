@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-// Defining a TypeScript interface for the resource data structure
+// Defining TS interface for the resource data structure
 interface Resource {
   id: string;
   title: string;
@@ -15,31 +15,25 @@ interface Resource {
 }
 
 export default function ResourcesClient({
-  resources,
-}: {
-  resources: Resource[];
-}) {
-  // Showing first 12 items initially
-  const [visibleResources, setVisibleResources] = useState<Resource[]>(
-    resources.slice(0, 12)
-  );
+  resources, // Receiving resources from the server
+  }: {
+    resources: Resource[]; // Array of resources objects
+  }) {
+    // Only tracking whether to show all items or not
+    const [isAllVisible, setIsAllVisible] = useState(false);
 
-  const [isAllVisible, setIsAllVisible] = useState(false);
+    // Deciding what to show based on the visibility state
+    const visibleResources = isAllVisible ? resources : resources.slice(0, 12);
 
-  // Toggling between 12 items and all items
-  const toggleVisibility = () => {
-    if (isAllVisible) {
-      setVisibleResources(resources.slice(0, 12));
-    } else {
-      setVisibleResources(resources);
-    }
-    setIsAllVisible(!isAllVisible);
-  };
+    // Toggling between 12 items and all items
+    const toggleVisibility = () => {
+      setIsAllVisible((prev) => !prev);
+    };
 
   return (
     <div className="w-full px-6 pb-4 mb-20 bg-white">
       {/* Section Header */}
-      <div className="w-full mb-8">
+      <div className="mb-8">
         <p className="uppercase font-semibold mb-4 text-base">
           Resources
         </p>
@@ -50,26 +44,28 @@ export default function ResourcesClient({
         {/* Resource Cards Section */}
         <div className="xl:w-3/4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8">
+
             {visibleResources.map((resource) => (
+              // mapping each resource
               <div
                 key={resource.id}
-                className="bg-white shadow-md overflow-hidden overflow-y-auto transition-transform transform hover:scale-105 hover:shadow-lg"
+                className="bg-white shadow-md overflow-hidden overflow-y-auto transition-transform hover:scale-105 hover:shadow-lg active:scale-105 active:shadow-lg"
               >
                 {/* Image */}
                 <div className="relative w-full h-52">
                   <Image
                     src={resource.imageUrl}
                     alt={resource.title}
-                    fill
+                    fill // works with relative parent to make image cover area
                     className="object-cover"
                   />
                 </div>
 
                 {/* Content */}
                 <div className="p-5">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                  <p className="text-xl font-semibold text-gray-900 mb-2">
                     {resource.title}
-                  </h3>
+                  </p>
 
                   <p className="text-sm text-gray-700 mb-3 line-clamp-4">
                     {resource.text}
@@ -90,6 +86,7 @@ export default function ResourcesClient({
                 </div>
               </div>
             ))}
+
           </div>
 
           {/* Toggle Button */}
@@ -99,7 +96,8 @@ export default function ResourcesClient({
               className="mt-6 text-black font-medium text-lg flex items-center"
             >
               {isAllVisible ? "Hide some" : "See all"}
-                            {isAllVisible ? (
+
+              {isAllVisible ? (
                 // Up arrow
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -146,7 +144,8 @@ export default function ResourcesClient({
             className="mx-auto mb-4"
           />
 
-          <p className="times-new-roman text-2xl font-extrabold text-gray-800 mb-4 uppercase" >
+          {/* Citadel Title */}
+          <p className="text-2xl font-extrabold text-gray-800 mb-4 uppercase times-new-roman">
             The Citadel
           </p>
 
