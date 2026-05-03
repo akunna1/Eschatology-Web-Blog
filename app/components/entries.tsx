@@ -199,7 +199,7 @@ export default function Entries() {
             onChange={(e) => setText(e.target.value)}
             className="w-full p-2 border-2 border-black rounded-md h-52 focus:outline-none focus:border-gray-100"
           />
-          <button type="submit" className="bg-black text-white py-1 px-6 rounded-lg hover:text-gray-400 shadow-xl">
+          <button type="submit" className="bg-black text-white py-1 px-6 rounded-lg hover:text-gray-400 active:text-gray-400 shadow-xl">
             <h3>{editingPost ? "Amend" : "Publish"}</h3>
           </button>
         </form>
@@ -277,7 +277,7 @@ export default function Entries() {
                 onChange={(e) => setCommentText(e.target.value)}
                 className="w-full p-2 border-2 border-black rounded-md focus:outline-none focus:border-gray-100"
               />
-              <button onClick={() => handleCommentSubmit(post.id)} className="bg-black text-white py-1 px-6 rounded-lg hover:text-gray-400 shadow-xl mt-3">
+              <button onClick={() => handleCommentSubmit(post.id)} className="bg-black text-white py-1 px-6 rounded-lg hover:text-gray-400 active:text-gray-400 shadow-xl mt-3">
                 <h3>Comment</h3>
               </button>
               <div className="mt-4">

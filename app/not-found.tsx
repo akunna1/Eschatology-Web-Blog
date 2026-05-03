@@ -20,9 +20,9 @@ export default function NotFound() {
         </div>
 
         {/* Big 404 */}
-        <h1 className="text-7xl font-extrabold mb-2 tracking-tight">
+        <p className="times-new-roman text-7xl font-extrabold mb-2 tracking-tight">
           404
-        </h1>
+        </p>
 
         {/* Warning line */}
         <div className="flex items-center gap-2 mb-4 text-gray-700">

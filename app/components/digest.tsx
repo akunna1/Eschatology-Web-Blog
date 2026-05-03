@@ -73,7 +73,7 @@ export default function Digest() {
                 className="bg-white p-5 text-lg rounded-lg w-full text-black focus:outline-none focus:ring-4 focus:ring-black pr-32"
                 required
               />
-              <button type="submit" className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black text-white py-3 px-8 rounded-lg hover:text-gray-400 transition font-medium text-lg">
+              <button type="submit" className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black text-white py-3 px-8 rounded-lg hover:text-gray-400 active:text-gray-400 transition-transform font-medium text-lg">
                 Subscribe
               </button>
               {message && <p className="absolute top-full mt-10 text-sm text-gray-600">{message}</p>}

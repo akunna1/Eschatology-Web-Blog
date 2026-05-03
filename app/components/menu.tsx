@@ -10,37 +10,37 @@ export default function Menu({ className, ...props }: MenuProps) {
       <div className="bg-black p-4">
         <div className="w-full flex justify-end items-center space-x-7">
           <h3>
-            <Link href="/prelude" className="text-white hover:text-gray-400">
+            <Link href="/prelude" className="text-white hover:text-gray-400 active:text-gray-400">
               Prelude
             </Link>
           </h3>
           <h3>
-            <Link href="/attestation" className="text-white hover:text-gray-400">
+            <Link href="/attestation" className="text-white hover:text-gray-400 active:text-gray-400">
               Attestation
             </Link>
           </h3>
           <h3>
-            <Link href="/forum" className="text-white hover:text-gray-400">
+            <Link href="/forum" className="text-white hover:text-gray-400 active:text-gray-400">
               Forum
             </Link>
           </h3>
           <h3>
-            <Link href="/map" className="text-white hover:text-gray-400">
+            <Link href="/map" className="text-white hover:text-gray-400 active:text-gray-400">
               Map
             </Link>
           </h3>
           <h3>
-            <Link href="/digest" className="text-white hover:text-gray-400">
+            <Link href="/digest" className="text-white hover:text-gray-400 active:text-gray-400">
               Digest
             </Link>
           </h3>
           <h3>
-            <Link href="/about" className="text-white hover:text-gray-400">
+            <Link href="/about" className="text-white hover:text-gray-400 active:text-gray-400">
               About
             </Link>
           </h3>
           <h3>
-            <Link href="/contact" className="text-white hover:text-gray-400">
+            <Link href="/contact" className="text-white hover:text-gray-400 active:text-gray-400">
               Contact
             </Link>
           </h3>

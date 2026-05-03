@@ -18,7 +18,7 @@ export default function Contact() {
           Reach me at{' '}
           <a 
             href="mailto:info@akunnatechstudio.com" 
-            className="font-semibold underline decoration-2 hover:underline hover:scale-105 transition-transform duration-200 inline-block"
+            className="font-semibold underline decoration-2 hover:underline hover:scale-105 active:underline active:scale-105 transition-transform duration-200 inline-block"
           >
             info@akunnatechstudio.com
           </a>{' '}

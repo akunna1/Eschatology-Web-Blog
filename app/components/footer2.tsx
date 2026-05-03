@@ -52,7 +52,7 @@ export default function Footer2() {
             required
           />
           <button type="submit" className="absolute right-2 bg-black py-1 px-6 rounded-lg shadow-xl">
-            <h3 className="text-white hover:text-gray-400">Subscribe</h3>
+            <h3 className="text-white hover:text-gray-400 active:text-gray-400">Subscribe</h3>
           </button>
           {message && <p className="absolute top-full mt-2 text-sm text-gray-600">{message}</p>}
         </form>
