@@ -22,7 +22,7 @@ export default function Map() {
     useEffect(() => {
     const fetchGroups = async () => {
         try {
-        const res = await fetch('/api/terrorGroupsData');
+        const res = await fetch('/api/terrorGroupsDataFetch');
         const data = await res.json();
         console.log("Fetched Data:", data);
         setGroups(data);

@@ -5,7 +5,6 @@ const pool = new Pool({
   connectionString: process.env.DATABASE_URL, // is in .env.local and not exposed to the client
 });
 
-
 export async function GET() {
   try {
     // Querying the database

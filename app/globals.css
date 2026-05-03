@@ -8,19 +8,6 @@ body {
   line-height: 1.8;
 }
 
-/*?*/
-h1 {
-  font-size: 2.5rem;
-  font-weight: 900;
-  font-family: 'Times New Roman', serif;
-}
-
-/*?*/
-h2 {
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
 /*Menu text, submenu headings, Subscribe button on the citadel in homepage, Return Home button, Sign In/Out Button*/
 h3 {
   font-size: 1.0rem;
