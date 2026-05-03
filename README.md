@@ -18,7 +18,7 @@ It includes a blog, forum, and an interactive map showing global Christian perse
 - Leaflet (maps)
 - Neon PostgreSQL (map data)
 - Firebase (auth + forum)
-- Contentful (homepage content)
+- Contentful Headless CMS (homepage resources content)
 
 ---
 
