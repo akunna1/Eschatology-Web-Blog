@@ -11,7 +11,7 @@ import Footer2 from "./components/footer2";
 export default function ClientLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      {/* Menu is visible on lg and above screens (props added), submenu is visible on all screens */}
+      {/* Menu is visible on lg and above screens (props added to make className below work), submenu is visible on all screens */}
       <Menu className="hidden lg:block"  />
       <Submenu/>
 
