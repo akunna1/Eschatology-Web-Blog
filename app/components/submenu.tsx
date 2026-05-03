@@ -116,7 +116,7 @@ export default function Submenu() {
         <div className="flex w-full justify-between sm:hidden">
           <div className="flex space-x-0 items-center">
             <Link href="/">
-              <p className="times-new-roman transform hover:scale-110 text-2xl font-bold uppercase">The Counterfeit</p>
+              <p className="times-new-roman transform hover:scale-110 active:scale-110 text-2xl font-bold uppercase">The Counterfeit</p>
             </Link>
           </div>
           <div className="flex items-center space-x-4">
@@ -144,7 +144,7 @@ export default function Submenu() {
                   {searchResults.map((item, index) => (
                     <li
                       key={index}
-                      className="p-3 hover:bg-gray-100 cursor-pointer"
+                      className="p-3 hover:bg-gray-100 active:bg-gray-100 cursor-pointer"
                       onClick={() => {
                         setSearchQuery(item.title);
                         router.push(`/search?query=${encodeURIComponent(item.title)}`);
@@ -152,7 +152,7 @@ export default function Submenu() {
                         setSearchOpen(false);
                       }}
                     >
-                      <h3 className="font-semibold">{item.title}</h3>
+                      <p className="font-semibold">{item.title}</p>
                       <p className="text-sm text-gray-500">{truncateText(item.text, 10)}</p>
                     </li>
                   ))}
@@ -163,7 +163,7 @@ export default function Submenu() {
         )}
 
             <button
-              className="text-2xl hover:text-gray-400"
+              className="text-2xl hover:text-gray-400 active:text-gray-400"
               onClick={toggleMenu}
             >
               {toggle ? <IoCloseOutline /> : <RxHamburgerMenu />}
@@ -177,33 +177,33 @@ export default function Submenu() {
           {/* Left Side (md) */}
           <div className="flex items-center space-x-5">
             <Link href="/prelude">
-              <h3 className="hover:text-gray-400">Prelude</h3>
+              <h3 className="hover:text-gray-400 active:text-gray-400">Prelude</h3>
             </Link>
             <Link href="/attestation">
-              <h3 className="hover:text-gray-400">Attestation</h3>
+              <h3 className="hover:text-gray-400 active:text-gray-400">Attestation</h3>
             </Link>
             <div className="relative">
               {/* Three Dots Dropdown Menu (md) */}
-              <button className="text-2xl hover:text-gray-400 flex items-center" onClick={toggleDropdown}>
+              <button className="text-2xl hover:text-gray-400 active:text-gray-400 flex items-center" onClick={toggleDropdown}>
                 <HiOutlineDotsHorizontal />
               </button>
 
               {dropdownOpen && (
                 <div className="absolute right-0 mt-2 w-32 p-3 pl-0 bg-white border border-gray-100 rounded-lg shadow-md z-10">
                   <Link href="/forum">
-                    <h3 className="px-4 py-1 mt-1 hover:text-gray-400">Forum</h3>
+                    <h3 className="px-4 py-1 mt-1 hover:text-gray-400 active:text-gray-400">Forum</h3>
                   </Link>
                   <Link href="/map">
-                    <h3 className="px-4 py-1 mt-1 hover:text-gray-400">Map</h3>
+                    <h3 className="px-4 py-1 mt-1 hover:text-gray-400 active:text-gray-400">Map</h3>
                   </Link>
                   <Link href="/digest">
-                    <h3 className="px-4 py-1 mb-1 hover:text-gray-400">Digest</h3>
+                    <h3 className="px-4 py-1 mb-1 hover:text-gray-400 active:text-gray-400">Digest</h3>
                   </Link>
                   <Link href="/about">
-                    <h3 className="px-4 py-1 mt-1 hover:text-gray-400">About</h3>
+                    <h3 className="px-4 py-1 mt-1 hover:text-gray-400 active:text-gray-400">About</h3>
                   </Link>
                   <Link href="/contact">
-                    <h3 className="px-4 py-1 mb-1 hover:text-gray-400">Contact</h3>
+                    <h3 className="px-4 py-1 mb-1 hover:text-gray-400 active:text-gray-400">Contact</h3>
                   </Link>
                 </div>
               )}
@@ -213,7 +213,7 @@ export default function Submenu() {
           {/* Centered Title (md) */}
           <div className="absolute left-1/2 transform -translate-x-1/2 z-20">
             <Link href="/">
-              <p className="times-new-roman transform hover:scale-110 text-xl font-bold uppercase">The Counterfeit</p>
+              <p className="times-new-roman transform hover:scale-110 active:scale-110 text-xl font-bold uppercase">The Counterfeit</p>
             </Link>
           </div>
 
@@ -243,7 +243,7 @@ export default function Submenu() {
                   {searchResults.map((item, index) => (
                     <li
                       key={index}
-                      className="p-3 hover:bg-gray-100 cursor-pointer"
+                      className="p-3 hover:bg-gray-100 active:bg-gray-100 cursor-pointer"
                       onClick={() => {
                         setSearchQuery(item.title);
                         router.push(`/search?query=${encodeURIComponent(item.title)}`);
@@ -251,7 +251,7 @@ export default function Submenu() {
                         setSearchOpen(false);
                       }}
                     >
-                      <h3 className="font-semibold">{item.title}</h3>
+                      <p className="font-semibold">{item.title}</p>
                       <p className="text-sm text-gray-500">{truncateText(item.text, 10)}</p>
                     </li>
                   ))}
@@ -261,12 +261,12 @@ export default function Submenu() {
           </div>
         )}
             {!user ? (
-              <button onClick={handleSignIn}><h3 className='transform hover:scale-110'>Sign In</h3></button>
+              <button onClick={handleSignIn}><h3 className='transform hover:scale-110 active:scale-110'>Sign In</h3></button>
             ) : (
-              <button onClick={handleSignOut}><h3 className='transform hover:scale-110'>Sign Out</h3></button>
+              <button onClick={handleSignOut}><h3 className='transform hover:scale-110 active:scale-110'>Sign Out</h3></button>
             )}
             <Link href="/digest">
-              <button className="bg-black text-white py-1 px-6 rounded-lg  hover:text-gray-400 shadow-xl">
+              <button className="bg-black text-white py-1 px-6 rounded-lg  hover:text-gray-400 active:text-gray-400 shadow-xl">
                 <h3>Subscribe</h3>
               </button>
             </Link>
@@ -301,7 +301,7 @@ export default function Submenu() {
                   {searchResults.map((item, index) => (
                     <li
                       key={index}
-                      className="p-3 hover:bg-gray-100 cursor-pointer"
+                      className="p-3 hover:bg-gray-100 active:bg-gray-100 cursor-pointer"
                       onClick={() => {
                         setSearchQuery(item.title);
                         router.push(`/search?query=${encodeURIComponent(item.title)}`);
@@ -309,7 +309,7 @@ export default function Submenu() {
                         setSearchOpen(false);
                       }}
                     >
-                      <h3 className="font-semibold">{item.title}</h3>
+                      <p className="font-semibold">{item.title}</p>
                       <p className="text-sm text-gray-500">{truncateText(item.text, 10)}</p>
                     </li>
                   ))}
@@ -324,7 +324,7 @@ export default function Submenu() {
           {/* Centered Title (lg) */}
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-20">
             <Link href="/">
-              <p className="times-new-roman transform hover:scale-110 text-3xl font-bold uppercase">
+              <p className="times-new-roman transform hover:scale-110 active:scale-110 text-3xl font-bold uppercase">
                 The Counterfeit
               </p>
               <p className="uppercase text-xs mt-2 mb-2 font-bold italic">
@@ -336,12 +336,12 @@ export default function Submenu() {
           {/* Right Side (lg) */}
           <div className="flex items-center space-x-7 z-20">
           {!user ? (
-              <button onClick={handleSignIn}><h3 className='transform hover:scale-110'>Sign In</h3></button>
+              <button onClick={handleSignIn}><h3 className='transform hover:scale-110 active:scale-110'>Sign In</h3></button>
             ) : (
-              <button onClick={handleSignOut}><h3 className='transform hover:scale-110'>Sign Out</h3></button>
+              <button onClick={handleSignOut}><h3 className='transform hover:scale-110 active:scale-110'>Sign Out</h3></button>
             )}
             <Link href="/digest">
-              <button className="bg-black text-white py-1 px-6 rounded-lg  hover:text-gray-400 shadow-xl">
+              <button className="bg-black text-white py-1 px-6 rounded-lg  hover:text-gray-400 active:text-gray-400 shadow-xl">
                 <h3>Subscribe</h3>
               </button>
             </Link>
@@ -377,7 +377,7 @@ export default function Submenu() {
                   {searchResults.map((item, index) => (
                     <li
                       key={index}
-                      className="p-3 hover:bg-gray-100 cursor-pointer"
+                      className="p-3 hover:bg-gray-100 active:bg-gray-100 cursor-pointer"
                       onClick={() => {
                         setSearchQuery(item.title);
                         router.push(`/search?query=${encodeURIComponent(item.title)}`);
@@ -385,7 +385,7 @@ export default function Submenu() {
                         setSearchOpen(false);
                       }}
                     >
-                      <h3 className="font-semibold">{item.title}</h3>
+                      <p className="font-semibold">{item.title}</p>
                       <p className="text-sm text-gray-500">{truncateText(item.text, 10)}</p>
                     </li>
                   ))}
@@ -400,7 +400,7 @@ export default function Submenu() {
           {/* Centered Title (xl) */}
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-20">
             <Link href="/">
-              <p className="times-new-roman transform hover:scale-110 text-3xl font-bold uppercase">
+              <p className="times-new-roman transform hover:scale-110 active:scale-110 text-3xl font-bold uppercase">
                 The Counterfeit
               </p>
               <p className="uppercase text-xs mt-2 mb-2 font-bold italic">
@@ -412,12 +412,12 @@ export default function Submenu() {
           {/* Right Side (xl) */}
           <div className="flex items-center space-x-7 z-20">
           {!user ? (
-              <button onClick={handleSignIn}><h3 className='transform hover:scale-110'>Sign In</h3></button>
+              <button onClick={handleSignIn}><h3 className='transform hover:scale-110 active:scale-110'>Sign In</h3></button>
             ) : (
-              <button onClick={handleSignOut}><h3 className='transform hover:scale-110'>Sign Out</h3></button>
+              <button onClick={handleSignOut}><h3 className='transform hover:scale-110 active:scale-110'>Sign Out</h3></button>
             )}
             <Link href="/digest">
-              <button className="bg-black text-white py-1 px-6 rounded-lg hover:text-gray-400 shadow-xl">
+              <button className="bg-black text-white py-1 px-6 rounded-lg hover:text-gray-400 active:text-gray-400 shadow-xl">
                 <h3>Subscribe</h3>
               </button>
             </Link>
@@ -427,56 +427,56 @@ export default function Submenu() {
 
       {/* Mobile Burger Menu (sm) */}
       {toggle && (
-        <div className="rounded-lg border-2 border-white p-2 sm:w-full md:hidden flex flex-col justify-between max-h-dvh">
+        <div className="p-2 sm:w-full md:hidden flex flex-col justify-between min-h-screen">
           <div className="grow flex items-center justify-center">
             <table className="w-full text-center mt-36">
               <tbody>
-              <tr className="border-b-2 border-white">
+              <tr>
                   <td className="py-2 pl-4">
                     <Link href="/prelude">
-                      <h3 className="hover:text-gray-400 text-lg">Prelude</h3>
+                      <h4 className="hover:text-gray-400 active:text-gray-400">Prelude</h4>
                     </Link>
                   </td>
                 </tr>
-                <tr className="border-b-2 border-white">
+                <tr>
                   <td className="py-2 pl-4">
                     <Link href="/attestation">
-                      <h3 className="hover:text-gray-400 text-lg">Attestation</h3>
+                      <h4 className="hover:text-gray-400 active:text-gray-400">Attestation</h4>
                     </Link>
                   </td>
                 </tr>
-                <tr className="border-b-2 border-white">
+                <tr>
                   <td className="py-2 pl-4">
                     <Link href="/forum">
-                      <h3 className="hover:text-gray-400 text-lg">Forum</h3>
+                      <h4 className="hover:text-gray-400 active:text-gray-400">Forum</h4>
                     </Link>
                   </td>
                 </tr>
-                <tr className="border-b-2 border-white">
+                <tr>
                   <td className="py-2 pl-4">
                     <Link href="/map">
-                      <h3 className="hover:text-gray-400 text-lg">Map</h3>
+                      <h4 className="hover:text-gray-400 active:text-gray-400">Map</h4>
                     </Link>
                   </td>
                 </tr>
-                <tr className="border-b-2 border-white">
+                <tr>
                   <td className="py-2 pl-4">
                     <Link href="/digest">
-                      <h3 className="hover:text-gray-400 text-lg">Digest</h3>
+                      <h4 className="hover:text-gray-400 active:text-gray-400">Digest</h4>
                     </Link>
                   </td>
                 </tr>
-                <tr className="border-b-2 border-white">
+                <tr>
                   <td className="py-2 pl-4">
                     <Link href="/about">
-                      <h3 className="hover:text-gray-400 text-lg">About</h3>
+                      <h4 className="hover:text-gray-400 active:text-gray-400">About</h4>
                     </Link>
                   </td>
                 </tr>
-                <tr className="border-b-2 border-white">
+                <tr>
                   <td className="py-2 pl-4">
                     <Link href="/contact">
-                      <h3 className="hover:text-gray-400 text-lg">Contact</h3>
+                      <h4 className="hover:text-gray-400 active:text-gray-400">Contact</h4>
                     </Link>
                   </td>
                 </tr>
@@ -485,16 +485,16 @@ export default function Submenu() {
           </div>
 
           <div className="flex flex-col items-center space-y-4 mt-36 mb-10">
-          <Link href="/digest">
-            <button className="bg-black w-fit text-white py-1 px-6 rounded-lg hover:text-gray-400 shadow-xl">
-              <h3>Subscribe</h3>
-            </button>
-          </Link>
+            <Link href="/digest">
+              <button className="bg-black w-fit text-white py-1 px-6 rounded-lg hover:text-gray-400 active:text-gray-400 shadow-xl">
+                <h3>Subscribe</h3>
+              </button>
+            </Link>
 
             {!user ? (
-              <button onClick={handleSignIn}><h3 className='transform hover:scale-110 text-lg'>Sign In</h3></button>
+              <button onClick={handleSignIn}><h3 className='transform hover:scale-110 active:scale-110 text-lg'>Sign In</h3></button>
             ) : (
-              <button onClick={handleSignOut}><h3 className='transform hover:scale-110 text-lg'>Sign Out</h3></button>
+              <button onClick={handleSignOut}><h3 className='transform hover:scale-110 active:scale-110 text-lg'>Sign Out</h3></button>
             )}
           </div>
         </div>

@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "The Counterfeit | Privacy Policy",
+  title: "The Counterfeit | Privacy",
 };
 
 export default function PrivacyLayout({

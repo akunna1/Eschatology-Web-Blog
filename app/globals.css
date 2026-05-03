@@ -21,9 +21,15 @@ h2 {
   font-weight: 500;
 }
 
-/*Menu text, submenu headings, Subscribe button on the citadel in homepage, Return Home button*/
+/*Menu text, submenu headings, Subscribe button on the citadel in homepage, Return Home button, Sign In/Out Button*/
 h3 {
   font-size: 1.0rem;
+  font-weight: 500;
+}
+
+/*Like h3 but for them burgermenu items of sm screens*/
+h4 {
+  font-size: 1.125rem;
   font-weight: 500;
 }
 
