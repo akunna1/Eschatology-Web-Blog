@@ -5,11 +5,12 @@ import { FaRegNewspaper, FaExclamationTriangle } from "react-icons/fa";
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-white px-6 text-center relative overflow-hidden">
-      <div className="absolute inset-0 opacity-[0.06] backgroundImage"/>
+    <div className="min-h-screen flex flex-col items-center bg-white px-6 text-center relative overflow-hidden pt-10">
+      {/* subtle background */}
+      <div className="absolute inset-0 opacity-[0.06] backgroundImage" />
 
       {/* Content layer */}
-      <div className="relative z-10 flex flex-col items-center">
+      <div className="relative z-10 flex flex-col items-center mt-20">
 
         {/* Icon header */}
         <div className="flex items-center gap-3 mb-4">
