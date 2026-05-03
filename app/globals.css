@@ -15,7 +15,7 @@ h1 {
   font-family: 'Times New Roman', serif;
 }
 
-/*Subtitles?*/
+/*?*/
 h2 {
   font-size: 1.2rem;
   font-weight: 500;
@@ -27,7 +27,7 @@ h3 {
   font-weight: 500;
 }
 
-/*Like h3 but for them burgermenu items of sm screens*/
+/*Like h3 but for them burger menu items of sm screens*/
 h4 {
   font-size: 1.125rem;
   font-weight: 500;
