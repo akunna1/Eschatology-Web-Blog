@@ -30,12 +30,12 @@ export default function Search() {
   }, [query]); // Only re-run when the query changes
 
   return (
-    <div className="p-6 my-2 max-w-3xl mx-auto bg-white text-black">
+    <div className="p-6 my-2 max-w-3xl 2xl:max-w-5xl mx-auto bg-white text-black">
       {/* Header displaying the current search query */}
-      <h1 className="text-3xl font-bold mb-6 text-black">
+      <p className="times-new-roman text-3xl font-bold mb-6 text-black">
         Search Results for:{" "}
         <span className="text-2xl text-gray-600">{query}</span>
-      </h1>
+      </p>
 
       {/* Show results if any match; otherwise display "no results" */}
       {results.length > 0 ? (
@@ -43,11 +43,11 @@ export default function Search() {
           {results.map((item, index) => (
             <li
               key={index}
-              className="p-6 shadow-lg bg-gray-50 hover:scale-105 transition-transform"
+              className="p-6 shadow-lg bg-gray-50 hover:scale-105 active:scale-105 transition-transform"
             >
-              <h2 className="text-xl font-semibold text-gray-800">
+              <p className="text-xl font-semibold text-gray-800">
                 {item.title}
-              </h2>
+              </p>
               <p className="text-gray-700">{item.text}</p>
             </li>
           ))}

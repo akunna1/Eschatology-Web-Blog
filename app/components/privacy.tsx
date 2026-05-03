@@ -2,7 +2,7 @@
 
 export default function Privacy () {
     return (
-      <div className="p-10 mb-20 mt-10 bg-white max-w-3xl xxl:max-w-4xl mx-auto">
+      <div className="p-10 mb-20 mt-10 bg-white max-w-3xl 2xl:max-w-5xl mx-auto">
         <p className="text-4xl font-bold text-left mb-6">Privacy</p>
         <p className=" leading-relaxed  mb-4">
           Curious about how <span className="font-semibold">The Counterfeit</span> handles privacy and data protection? Rest assured: this web app does not use any tracking cookies of any kind.

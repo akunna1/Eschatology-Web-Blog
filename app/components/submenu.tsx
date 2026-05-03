@@ -116,7 +116,7 @@ export default function Submenu() {
         <div className="flex w-full justify-between sm:hidden">
           <div className="flex space-x-0 items-center">
             <Link href="/">
-              <p className="times-new-roman transform hover:scale-110 active:scale-110 text-2xl font-bold uppercase">The Counterfeit</p>
+              <p className="times-new-roman transition-transform hover:scale-110 active:scale-110 text-2xl font-bold uppercase">The Counterfeit</p>
             </Link>
           </div>
           <div className="flex items-center space-x-4">
@@ -211,9 +211,9 @@ export default function Submenu() {
           </div>
 
           {/* Centered Title (md) */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 z-20">
+          <div className="absolute left-1/2 transition-transform -translate-x-1/2 z-20">
             <Link href="/">
-              <p className="times-new-roman transform hover:scale-110 active:scale-110 text-xl font-bold uppercase">The Counterfeit</p>
+              <p className="times-new-roman transition-transform hover:scale-110 active:scale-110 text-xl font-bold uppercase">The Counterfeit</p>
             </Link>
           </div>
 
@@ -261,9 +261,9 @@ export default function Submenu() {
           </div>
         )}
             {!user ? (
-              <button onClick={handleSignIn}><h3 className='transform hover:scale-110 active:scale-110'>Sign In</h3></button>
+              <button onClick={handleSignIn}><h3 className='transition-transform hover:scale-110 active:scale-110'>Sign In</h3></button>
             ) : (
-              <button onClick={handleSignOut}><h3 className='transform hover:scale-110 active:scale-110'>Sign Out</h3></button>
+              <button onClick={handleSignOut}><h3 className='transition-transform hover:scale-110 active:scale-110'>Sign Out</h3></button>
             )}
             <Link href="/digest">
               <button className="bg-black text-white py-1 px-6 rounded-lg  hover:text-gray-400 active:text-gray-400 shadow-xl">
@@ -324,7 +324,7 @@ export default function Submenu() {
           {/* Centered Title (lg) */}
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-20">
             <Link href="/">
-              <p className="times-new-roman transform hover:scale-110 active:scale-110 text-3xl font-bold uppercase">
+              <p className="times-new-roman transition-transform hover:scale-110 active:scale-110 text-3xl font-bold uppercase">
                 The Counterfeit
               </p>
               <p className="uppercase text-xs mt-2 mb-2 font-bold italic">
@@ -336,9 +336,9 @@ export default function Submenu() {
           {/* Right Side (lg) */}
           <div className="flex items-center space-x-7 z-20">
           {!user ? (
-              <button onClick={handleSignIn}><h3 className='transform hover:scale-110 active:scale-110'>Sign In</h3></button>
+              <button onClick={handleSignIn}><h3 className='transition-transform hover:scale-110 active:scale-110'>Sign In</h3></button>
             ) : (
-              <button onClick={handleSignOut}><h3 className='transform hover:scale-110 active:scale-110'>Sign Out</h3></button>
+              <button onClick={handleSignOut}><h3 className='transition-transform hover:scale-110 active:scale-110'>Sign Out</h3></button>
             )}
             <Link href="/digest">
               <button className="bg-black text-white py-1 px-6 rounded-lg  hover:text-gray-400 active:text-gray-400 shadow-xl">
@@ -400,7 +400,7 @@ export default function Submenu() {
           {/* Centered Title (xl) */}
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-20">
             <Link href="/">
-              <p className="times-new-roman transform hover:scale-110 active:scale-110 text-3xl font-bold uppercase">
+              <p className="times-new-roman transition-transform hover:scale-110 active:scale-110 text-3xl font-bold uppercase">
                 The Counterfeit
               </p>
               <p className="uppercase text-xs mt-2 mb-2 font-bold italic">
@@ -412,9 +412,9 @@ export default function Submenu() {
           {/* Right Side (xl) */}
           <div className="flex items-center space-x-7 z-20">
           {!user ? (
-              <button onClick={handleSignIn}><h3 className='transform hover:scale-110 active:scale-110'>Sign In</h3></button>
+              <button onClick={handleSignIn}><h3 className='transition-transform hover:scale-110 active:scale-110'>Sign In</h3></button>
             ) : (
-              <button onClick={handleSignOut}><h3 className='transform hover:scale-110 active:scale-110'>Sign Out</h3></button>
+              <button onClick={handleSignOut}><h3 className='transition-transform hover:scale-110 active:scale-110'>Sign Out</h3></button>
             )}
             <Link href="/digest">
               <button className="bg-black text-white py-1 px-6 rounded-lg hover:text-gray-400 active:text-gray-400 shadow-xl">
@@ -492,9 +492,9 @@ export default function Submenu() {
             </Link>
 
             {!user ? (
-              <button onClick={handleSignIn}><h3 className='transform hover:scale-110 active:scale-110 text-lg'>Sign In</h3></button>
+              <button onClick={handleSignIn}><h3 className='transition-transform hover:scale-110 active:scale-110 text-lg'>Sign In</h3></button>
             ) : (
-              <button onClick={handleSignOut}><h3 className='transform hover:scale-110 active:scale-110 text-lg'>Sign Out</h3></button>
+              <button onClick={handleSignOut}><h3 className='transition-transform hover:scale-110 active:scale-110 text-lg'>Sign Out</h3></button>
             )}
           </div>
         </div>
