@@ -1,6 +1,6 @@
-# ✝️ The Counterfeit
+# The Counterfeit
 
-A Next.js web app focused on Christian **eschatology**, comparative theology, and global persecution.
+A Next.js web app focused on **Christian eschatology**, **comparative theology**, and **global persecution**.
 
 ---
 
