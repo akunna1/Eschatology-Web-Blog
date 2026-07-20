@@ -37,7 +37,7 @@ export default function Verdict() {
         </p>
 
         <p className="mt-4 text-lg text-gray-800 font-semibold">
-          Islam, when examined closely, is revealed to be Christianity's greatest counterfeit and its most dangerous threat.
+          Islam, when examined closely, is revealed to have a major role to play in Christianity's end-times prophecy. However, it is lukewarm Christianity, shaped by years of societal compromise, that will usher it in.
         </p>
       </div>
     </div>
