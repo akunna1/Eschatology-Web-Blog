@@ -1,6 +1,6 @@
 "use client";
 
-import Digest from "../components/digest";
+import Digest from "@/components/digest";
 
 export default function DigestPage () {
 return (

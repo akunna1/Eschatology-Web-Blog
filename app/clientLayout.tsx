@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import Menu from "./components/menu";
-import Submenu from "./components/submenu";
-import Footer1 from "./components/footer1";
-import Footer2 from "./components/footer2";
+import Menu from "@/components/menu";
+import Submenu from "@/components/submenu";
+import Footer1 from "@/components/footer1";
+import Footer2 from "@/components/footer2";
 
 // Contains actual UI structure (e.g., page layout, footer, floating buttons, menu, etc.) => clientLayout.tsx 
 

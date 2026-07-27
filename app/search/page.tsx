@@ -1,7 +1,7 @@
 "use client";
 
 import { Suspense } from "react";
-import SearchQuery from "../components/searchQuery";
+import SearchQuery from "@/components/searchQuery";
 
 export default function SearchPage() {
   return (

@@ -1,6 +1,6 @@
 "use client";
 
-import Privacy from "../components/privacy";
+import Privacy from "@/components/privacy";
 
 export default function PrivacyPage () {
 return (

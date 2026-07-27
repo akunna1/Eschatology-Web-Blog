@@ -7,7 +7,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseOutline } from "react-icons/io5";
 import { HiOutlineDotsHorizontal } from "react-icons/hi";
 import { IoIosSearch } from "react-icons/io";
-import { sampleData } from "../data/sampleData"; // sample data for search functionality
+import { sampleData } from "@/app/data/sampleData"; // sample data for search functionality
 import { signInWithPopup, signOut, auth, provider } from '@/lib/firebase/config';
 
 export default function Submenu() {
