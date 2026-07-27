@@ -3,7 +3,7 @@
 import { useSearchParams } from "next/navigation"; // Hook to access query params from the URL
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { sampleData } from "@/app/data/sampleData";
+import { sampleData } from "@/data/sampleData";
 
 export default function Search() {
   // Grab the current search params from the URL
