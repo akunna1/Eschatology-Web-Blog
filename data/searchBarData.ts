@@ -1,4 +1,4 @@
-export const sampleData = [
+export const searchBarData = [
     { title: "The End-Times Prophet: Islam, Islam, Islam...enough! How about Buddhism?", text: "In Revelation, the False Prophet appears as the second beast (Revelation 13:11–18). He is described as having two horns like a lamb but speaking like a dragon. The imagery suggests a deceptive imitation: the only true Lamb emphasized..." }, 
     { title: "The White Horse Rider: Islam, Islam, Islam...enough! How about Hinduism?", text: "n ~95–96 AD, John of Patmos received the Revelation vision and wrote it down during the reign of Roman Emperor Domitian. Revelation describes two white horse riders: the first rider (Revelation 6:1–2, first seal) is interpreted by..." }, 
     { title: "Faith, Politics, and the Danger of a Shallow Foundation", text: "Faith and politics are definitely intertwined. That’s why it’s concerning when people claim Christianity but don’t take the time to truly understand it and live by it, yet confidently express political views that, in all honesty..." }, 
@@ -43,4 +43,4 @@ export const sampleData = [
     { title: "Even Atheists have a Religion", text: "Human beings are naturally prone to worship something, whether they realize it or not. Our hearts are always seeking a source of meaning, self-worth, and security. One who does not worship the Creator (i.e God) will inevitably..."}
 ];
 
-export default sampleData;
+export default searchBarData;

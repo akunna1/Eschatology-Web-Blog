@@ -7,7 +7,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseOutline } from "react-icons/io5";
 import { HiOutlineDotsHorizontal } from "react-icons/hi";
 import { IoIosSearch } from "react-icons/io";
-import { sampleData } from "@/data/sampleData"; // sample data for search functionality
+import { searchBarData } from "@/data/searchBarData";
 import { signInWithPopup, signOut, auth, provider } from '@/lib/firebase/config';
 
 export default function Submenu() {
@@ -39,7 +39,7 @@ export default function Submenu() {
       return;
     }
 
-    const filteredResults = sampleData.filter((item) =>
+    const filteredResults = searchBarData.filter((item) =>
       item.title.toLowerCase().includes(query.toLowerCase()) ||
       item.text.toLowerCase().includes(query.toLowerCase())
     );
@@ -47,7 +47,7 @@ export default function Submenu() {
   };
 
   // Handles search form submission, redirects to search results page
-  const handleSearch = (e: React.FormEvent) => {
+  const handleSearch = (e: React.SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (searchQuery.trim()) {
       router.push(`/search?query=${encodeURIComponent(searchQuery)}`);

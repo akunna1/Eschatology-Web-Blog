@@ -3,7 +3,7 @@
 import { useSearchParams } from "next/navigation"; // Hook to access query params from the URL
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { sampleData } from "@/data/sampleData";
+import { searchBarData } from "@/data/searchBarData";
 
 export default function Search() {
   // Grab the current search params from the URL
@@ -15,10 +15,10 @@ export default function Search() {
   // Store the filtered results in state
   const [results, setResults] = useState<any[]>([]);
 
-  // Whenever the query changes, filter the sampleData to find matching entries
+  // Whenever the query changes, filter the searchBarData to find matching entries
   useEffect(() => {
     if (query.trim()) {
-      const filteredResults = sampleData.filter((item) =>
+      const filteredResults = searchBarData.filter((item) =>
         item.title.toLowerCase().includes(query.toLowerCase()) ||
         item.text.toLowerCase().includes(query.toLowerCase())
       );
