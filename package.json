@@ -12,6 +12,7 @@
     "@contentful/rich-text-plain-text-renderer": "^17.2.1",
     "contentful": "^11.12.1",
     "firebase": "^12.12.1",
+    "install": "^0.13.0",
     "leaflet": "^1.9.4",
     "next": "16.2.4",
     "pg": "^8.20.0",
